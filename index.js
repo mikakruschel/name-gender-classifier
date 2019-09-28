@@ -5,7 +5,7 @@ const { nameToASCII } = require('./utils');
 
 async function classifyName(name) {
   // load model
-  const path = './node_modules/name-gender-classifier/model/model.json';
+  const path = require.resolve('./model/model.json');
 
   if (!fs.existsSync(path)) throw new Error('trained model missing');
   const model = await tf.loadLayersModel(`file://${path}`);

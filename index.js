@@ -16,7 +16,7 @@ async function classifyName(name) {
     const results = model.predict(input);
     const argMax = results.argMax(1);
     const index = argMax.dataSync()[0];
-    return { male: index === 0, female: index !== 0 };
+    return { male: index === 0, female: index !== 0, name };
   });
 }
 

@@ -1,6 +1,6 @@
 {
   "name": "name-gender-classifier",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Gender classifier from first name",
   "main": "index.js",
   "scripts": {

@@ -5,10 +5,10 @@ const { nameToASCII } = require('./utils');
 
 async function classifyName(name) {
   // load model
-  const modelPath = './model/model.json';
+  const path = './node_modules/name-gender-classifier/model/model.json';
 
-  if (!fs.existsSync('./model/model.json') || !fs.existsSync('./model/weights.bin')) throw new Error('missing trained Model');
-  const model = await tf.loadLayersModel(`file://${modelPath}`);
+  if (!fs.existsSync(path)) throw new Error('trained model missing');
+  const model = await tf.loadLayersModel(`file://${path}`);
 
   // predict
   return tf.tidy(() => {

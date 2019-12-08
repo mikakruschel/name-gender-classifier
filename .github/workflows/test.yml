@@ -13,7 +13,7 @@ jobs:
       with:
         node-version: 12
 
-    - name: install and test
+    - name: ci and test
       run: |
-        npm install
+        npm ci
         npm test

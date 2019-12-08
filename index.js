@@ -4,6 +4,7 @@ const fs = require('fs');
 const { nameToASCII } = require('./utils');
 
 async function classifyName(name) {
+  if (!name || name == '' || name.trim() == '') throw new Error('No name was specified.');
   // load model
   const path = require.resolve('./model/model.json');
 

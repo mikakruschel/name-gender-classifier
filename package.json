@@ -1,9 +1,10 @@
 {
   "name": "name-gender-classifier",
-  "version": "1.0.6",
+  "version": "1.1.0",
   "description": "Gender classifier from first name",
   "main": "index.js",
   "scripts": {
+    "test": "jest",
     "lint": "eslint ./"
   },
   "repository": {
@@ -35,6 +36,7 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1"
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^25.0.0"
   }
 }

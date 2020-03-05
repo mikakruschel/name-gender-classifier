@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/mikakruschel/name-gender-classifier#readme",
   "dependencies": {
-    "@tensorflow/tfjs": "^1.5.2",
+    "@tensorflow/tfjs": "^1.6.0",
     "@tensorflow/tfjs-node": "^1.6.0",
     "tfjs-node-save": "0.0.2"
   },

@@ -1,5 +1,4 @@
 const tf = require('@tensorflow/tfjs');
-require('@tensorflow/tfjs-node');
 
 const fs = require('fs').promises;
 const { nameToASCII, shuffle } = require('./utils');
